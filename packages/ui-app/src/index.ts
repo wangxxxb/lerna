@@ -1,7 +1,3 @@
-import { minus } from 'ui-lib'
+import { isNaN } from 'ui-lib'
 
-function getMinus(a: number, b: number) {
-  return minus(a, b)
-}
-
-console.log(getMinus(1, 2))
+console.log(isNaN(NaN))
