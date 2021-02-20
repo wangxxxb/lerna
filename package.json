@@ -13,7 +13,7 @@
     "diff": "lerna diff",
     "bootstrap": "lerna bootstrap",
     "reset": "yarn clean && yarn clean-locks && yarn bootstrap",
-    "clean": "lerna clean",
+    "clean": "lerna clean && lerna run clean",
     "clean-locks": "rm -rf ./packages/*/yarn.lock",
     "test": "lerna run test"
   },
