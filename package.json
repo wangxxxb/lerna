@@ -1,16 +1,37 @@
 {
-  "name": "root",
+  "name": "haomai",
+  "version": "1.0.0",
   "private": true,
-  "scrips": {
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "publish": "lerna publish from-git",
+    "build": "lerna run --stream --sort build",
     "new-version": "lerna version --conventional-commits --yes",
+    "diff": "lerna diff",
     "bootstrap": "lerna bootstrap",
     "reset": "yarn clean && yarn clean-locks && yarn bootstrap",
-    "diff": "lerna diff",
     "clean": "lerna clean",
     "clean-locks": "rm -rf ./packages/*/yarn.lock",
     "test": "lerna run test"
   },
   "devDependencies": {
-    "lerna": "^3.22.1"
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "husky": "^5.0.9",
+    "jest": "^26.6.3",
+    "lerna": "^3.22.1",
+    "lint-staged": "^10.5.4",
+    "typescript": "^4.1.5"
+  },
+  "main": "index.js",
+  "repository": "git@github.com:wangxxxb/lerna.git",
+  "author": "wang <876739172@qq.com>",
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
