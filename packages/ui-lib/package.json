@@ -19,7 +19,8 @@
   "scripts": {
     "test": "echo success",
     "build": "tsc",
-    "clean": "rimraf lib"
+    "clean": "rimraf lib",
+    "code-prettier": "echo code prettier success"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.168"
