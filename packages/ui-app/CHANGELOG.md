@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/wangxxxb/lerna/compare/ui-app@2.0.0...ui-app@3.0.0) (2021-02-20)
+
+
+### Features
+
+* **ui-app/src/index.ts ui-lib/src/index.ts:** 重构ui-lib ([8446964](https://github.com/wangxxxb/lerna/commit/84469640309e67ac69a1cb7268dae4c56b1e1007))
+
+
+### BREAKING CHANGES
+
+* **ui-app/src/index.ts ui-lib/src/index.ts:** 重构样例代码
+
+
+
+
+
 # [2.0.0](https://github.com/wangxxxb/lerna/compare/ui-app@1.0.1...ui-app@2.0.0) (2021-02-20)
 
 
